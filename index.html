@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIP HOP GENERATOR PRO - VÄÄNTÖ VÄINÄMÖINEN EDITION</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HIP HOP GENERATOR PRO</title>
     <style>
         :root {
             --primary: #00ff88;
@@ -12,7 +13,6 @@
             --darker: #050812;
             --accent: #00d9ff;
             --warn: #ffaa00;
-            --country-orange: #ff6b35;
             --space: 16px;
         }
 
@@ -27,25 +27,7 @@
             background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
             color: #e0e0e0;
             overflow-x: hidden;
-        }
-
-        .neon-glow {
-            text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
-        }
-
-        .neon-border {
-            border: 2px solid var(--primary);
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5), inset 0 0 20px rgba(0, 255, 136, 0.1);
-        }
-
-        .vaanto-button {
-            background: linear-gradient(135deg, var(--country-orange), #f7931e) !important;
-            border-color: var(--country-orange) !important;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4) !important;
-        }
-
-        .vaanto-button:hover {
-            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.6) !important;
+            min-height: 100vh;
         }
 
         .container {
@@ -62,10 +44,7 @@
 
         h1 {
             font-size: 3.5rem;
-            background: linear-gradient(135deg, var(--primary), var(--country-orange));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--primary);
             text-transform: uppercase;
             letter-spacing: 4px;
             margin-bottom: 0.5rem;
@@ -86,12 +65,15 @@
         }
 
         @media (max-width: 1024px) {
-            .grid { grid-template-columns: 1fr 1fr; }
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         @media (max-width: 768px) {
-            .grid { grid-template-columns: 1fr; }
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
 
-        .panel {
-            background: rgba(15, 23, 42,
+        .p
