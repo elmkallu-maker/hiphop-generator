@@ -3,77 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HIP HOP GENERATOR PRO</title>
     <style>
-        :root {
-            --primary: #00ff99;
-            --secondary: #ff006e;
-            --dark: #0a0e27;
-            --darker: #050812;
-            --accent: #00d9ff;
-            --warn: #ffaa00;
-            --space: 16px;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: #050812; 
+            color: #e0e0e0; 
+            font-family: Arial, sans-serif;
+            padding: 20px;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        h1 { 
+            color: #00ff88; 
+            font-size: 2.5rem;
+            text-shadow: 0 0 20px #00ff88;
+            margin-bottom: 1rem;
+            text-align: center;
         }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
-            color: #e0e0e0;
-            overflow-x: hidden;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: var(--space);
-        }
-
-        header {
+        .subtitle {
+            color: #00d9ff;
             text-align: center;
             margin-bottom: 2rem;
-            animation: slideDown 0.8s ease-out;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 0.5rem;
-            animation: glitch 0.3s infinite;
-        }
-
-        .subtitle {
-            color: var(--accent);
             font-size: 1.1rem;
-            letter-spacing: 2px;
         }
-
         .grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        @media (max-width: 1024px) {
-            .grid {
-                grid-template-columns: 1fr 1fr;
-            }
+        .panel {
+            background: rgba(15, 23, 42, 0.9);
+            border: 2px solid #ff006e;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px rgba(255, 0, 110, 0.2);
         }
-
-        @media (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
+        .panel-title {
+            color: #00ff88;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
         }
-
-        .p
+        label {
+            display: block;
+            color: #00d9ff;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            margin-bottom: 0.3rem;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
