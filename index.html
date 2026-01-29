@@ -242,15 +242,13 @@
 <body>
     <button class="toggle-theme" id="themeToggle" onclick="toggleTheme()">🌙</button>
     <h1>🎤 HIP HOP GENERATOR PRO 🎤</h1>
-    <p class="subtitle">LYRIIKKA • VISUAALIT • PERSOONA</p>
+    <p class="subtitle">LYRIIKKA • VISUAALIT • PERSOONA • COUNTRY-TRAP 🤠 • KALEVALA 🌙</p>
 
     <div class="grid">
-        <!-- LYRIIKKA PANEL -->
         <div class="panel">
             <div class="panel-title">🎵 LYRIIKKA GENERATOR</div>
             <label>TEEMA / AIHE</label>
             <input type="text" id="lyricsTheme" placeholder="katujen elämä, rakkaus...">
-            
             <label>TYYLI</label>
             <select id="lyricsStyle">
                 <option value="trap">TRAP 🔥</option>
@@ -258,8 +256,10 @@
                 <option value="drill">DRILL 💯</option>
                 <option value="gospel">GOSPEL 🙏</option>
                 <option value="oldschool">OLD SCHOOL 🕰️</option>
+                <option value="countrytrap">COUNTRY-TRAP 🤠🔥</option>
+                <option value="vainamonen">VÄINÄMÖINEN 🌙✨</option>
+                <option value="hardelo">HÄRDELÖT 🎻🎶</option>
             </select>
-
             <label>MIELIALA</label>
             <select id="lyricsEmotio">
                 <option value="aggressive">AGGRESSIIVINEN 💢</option>
@@ -268,17 +268,14 @@
                 <option value="party">PARTY 🎉</option>
                 <option value="dark">PIMEÄ & NOIR 🌙</option>
             </select>
-
             <label>RIIMIEN TIHEYS</label>
             <div style="display:flex; gap:0.5rem; align-items:center;">
                 <input type="range" id="rhymeIntensity" min="1" max="10" value="7" style="flex:1;">
-                <span id="rhymeValue" style="color:#00ff88; min-width:25px;">7</span>
+                <span id="rhymeValue" style="color:#00ff88;">7</span>
             </div>
-
             <button onclick="generateLyrics()">⚡ GENEROI LYRIIKKA ⚡</button>
         </div>
 
-        <!-- PERSOONA PANEL -->
         <div class="panel">
             <div class="panel-title">👤 PERSOONA GENERATOR</div>
             <label>PERSOONA TYYPPI</label>
@@ -289,8 +286,10 @@
                 <option value="producer">TUOTTAJA-ARTISTI 🎛️</option>
                 <option value="spiritual">HENKINEN JOHTAJA ✨</option>
                 <option value="rebel">KAPINALLINEN 🔥</option>
+                <option value="countryballer">COUNTRY BALLER 🤠</option>
+                <option value="vainamoinenbard">VÄINÄMÖINEN BARDI 🌙</option>
+                <option value="hardelosoitaja">HÄRDELÖT SOITAJA 🎻</option>
             </select>
-
             <label>ÄÄNI & AKSENTTI</label>
             <select id="voiceType">
                 <option value="deep">SYVÄ & MATALA 🔊</option>
@@ -298,18 +297,17 @@
                 <option value="raspy">RÖYHKEÄ & RAAKAILE 🌪️</option>
                 <option value="melodic">MELODINEN 🎶</option>
                 <option value="robotic">ROBOTTI-VAIKUTUS 🤖</option>
+                <option value="southern">ETELÄINEN AKSENTTI 🤠</option>
+                <option value="karelian">KARJALAINEN AKSENTTI 🌲</option>
             </select>
-
             <label>AGGRESSIIVISUUS</label>
             <div style="display:flex; gap:0.5rem; align-items:center;">
                 <input type="range" id="aggression" min="1" max="10" value="5" style="flex:1;">
-                <span id="aggValue" style="color:#00ff88; min-width:25px;">5</span>
+                <span id="aggValue" style="color:#00ff88;">5</span>
             </div>
-
             <button onclick="generatePersona()">👤 GENEROI PERSOONA 👤</button>
         </div>
 
-        <!-- BEAT PANEL -->
         <div class="panel">
             <div class="panel-title">🥁 BEAT PATTERN</div>
             <label>TEMPO (BPM)</label>
@@ -320,7 +318,6 @@
                 <option value="170">FAST 170 BPM 🔥</option>
                 <option value="200">EXTREME 200 BPM 💥</option>
             </select>
-
             <label>DRUM PATTERN</label>
             <select id="drumPattern">
                 <option value="808">808 HEAVY 💥</option>
@@ -328,8 +325,10 @@
                 <option value="crisp">CRISP SNARES 🎯</option>
                 <option value="boom">BOOM BAP CLASSIC 🥁</option>
                 <option value="glitchy">GLITCHY/EXP 🌀</option>
+                <option value="country">COUNTRY TWANG 🤠</option>
+                <option value="vainamonen">VÄINÄMÖINEN FOLK 🌙</option>
+                <option value="hardelo">HÄRDELÖT VIULU 🎻</option>
             </select>
-
             <label>INSTRUMENTAATIO</label>
             <select id="instruments">
                 <option value="dark">PIMEÄ & MINIMAL 🌑</option>
@@ -337,12 +336,13 @@
                 <option value="orchestral">ORKESTRAL 🎻</option>
                 <option value="synth">SYNTH-HEAVY 🎹</option>
                 <option value="mixed">SEKOITETTU 🎵</option>
+                <option value="countrymusic">COUNTRY-KITARA 🎸</option>
+                <option value="kantele">KANTELE & JOUHIKKO 🌙</option>
+                <option value="karelia">KARJALAN-FOLK 🌲</option>
             </select>
-
             <button onclick="generateBeat()">🥁 GENEROI BEAT 🥁</button>
         </div>
 
-        <!-- VISUAALIT PANEL -->
         <div class="panel">
             <div class="panel-title">🎨 VISUAALI GENERATOR</div>
             <label>TYYLI</label>
@@ -352,8 +352,10 @@
                 <option value="graffiti">GRAFFITI-URBAN 🎨</option>
                 <option value="dark-cinematic">PIMEÄ-SINEMATINEN 🎬</option>
                 <option value="gospel-bright">GOSPEL-KIRKAS ☀️</option>
+                <option value="countrywood">COUNTRY-WOOD 🤠🌾</option>
+                <option value="vainamonen">VÄINÄMÖINEN RUNOUS 🌙</option>
+                <option value="hardelo">HÄRDELÖT PERINNE 🎻</option>
             </select>
-
             <label>VÄRIPALETTTI</label>
             <select id="colorPalette">
                 <option value="neon">NEON (VIHREÄ/PINKKI) 🌈</option>
@@ -361,8 +363,9 @@
                 <option value="warm">LÄMMIN (ORANSSI) 🔥</option>
                 <option value="monochrome">MUSTAVALKOINEN ⚫⚪</option>
                 <option value="holo">HOLOGRAFINEN ✨</option>
+                <option value="dusty">PÖLYPEIKKO (RUSKEA) 🤠</option>
+                <option value="karelian">KARJALAINEN KULTA 🌲</option>
             </select>
-
             <label>PÄÄELEMENTTI</label>
             <select id="visualElement">
                 <option value="portrait">PORTRETTI/DJ 🎤</option>
@@ -370,56 +373,55 @@
                 <option value="abstract">ABSTRAKTI 🌀</option>
                 <option value="typography">TYPOGRAFIA 🔤</option>
                 <option value="mixed">SEKOITETTU 🎭</option>
+                <option value="countryside">MAALAISMAISEMA 🤠</option>
+                <option value="runelaulaja">RUNELAULAJA 🌙</option>
+                <option value="folk">FOLK-PERINNE 🎻</option>
             </select>
-
             <button onclick="generateVisuals()">🎨 RENDEROI VISUAALIT 🎨</button>
         </div>
 
-        <!-- KEHITTYNEET ASETUKSET PANEL -->
         <div class="panel">
             <div class="panel-title">⚙️ KEHITTYNEET ASETUKSET</div>
-            <label>ALUSTA RAKENTAMISEEN</label>
+            <label>ALUSTA</label>
             <select id="advancedMode">
                 <option value="balanced">TASAPAINOITETTU 💯</option>
                 <option value="aggressive">AGGRESSIIVINEN 💢</option>
                 <option value="experimental">KOKEELLINEN 🧪</option>
                 <option value="lofi">LO-FI VIBES ☕</option>
+                <option value="countrytrap">COUNTRY-TRAP 🤠🔥</option>
+                <option value="vainamonen">VÄINÄMÖINEN MODE 🌙</option>
+                <option value="hardelo">HÄRDELÖT MODE 🎻</option>
+                <option value="fusion">KALEVALA FUSION 🌙✨</option>
             </select>
-
             <label>KOMPLEKSISUUS</label>
             <div style="display:flex; gap:0.5rem; align-items:center;">
                 <input type="range" id="complexity" min="1" max="10" value="6" style="flex:1;">
-                <span id="complexValue" style="color:#00ff88; min-width:25px;">6</span>
+                <span id="complexValue" style="color:#00ff88;">6</span>
             </div>
-
             <label style="margin-top:1rem;">LISÄEFEKTIT</label>
             <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem;">
-                <label style="display:flex; align-items:center; gap:0.4rem; margin:0.3rem 0;">
-                    <input type="checkbox" id="addReverb" style="width:16px; height:16px; cursor:pointer;">
+                <label style="display:flex; align-items:center; gap:0.4rem;">
+                    <input type="checkbox" id="addReverb" style="width:16px; height:16px;">
                     <span style="color:#00d9ff; font-size:0.8rem;">REVERB</span>
                 </label>
-                <label style="display:flex; align-items:center; gap:0.4rem; margin:0.3rem 0;">
-                    <input type="checkbox" id="addDelay" style="width:16px; height:16px; cursor:pointer;">
+                <label style="display:flex; align-items:center; gap:0.4rem;">
+                    <input type="checkbox" id="addDelay" style="width:16px; height:16px;">
                     <span style="color:#00d9ff; font-size:0.8rem;">DELAY</span>
                 </label>
-                <label style="display:flex; align-items:center; gap:0.4rem; margin:0.3rem 0;">
-                    <input type="checkbox" id="addDistortion" style="width:16px; height:16px; cursor:pointer;">
+                <label style="display:flex; align-items:center; gap:0.4rem;">
+                    <input type="checkbox" id="addDistortion" style="width:16px; height:16px;">
                     <span style="color:#00d9ff; font-size:0.8rem;">DISTORTION</span>
                 </label>
-                <label style="display:flex; align-items:center; gap:0.4rem; margin:0.3rem 0;">
-                    <input type="checkbox" id="addGlitch" style="width:16px; height:16px; cursor:pointer;">
+                <label style="display:flex; align-items:center; gap:0.4rem;">
+                    <input type="checkbox" id="addGlitch" style="width:16px; height:16px;">
                     <span style="color:#00d9ff; font-size:0.8rem;">GLITCH</span>
                 </label>
             </div>
-
             <button onclick="generateFull()">🚀 TÄYSI SEKOITUS 🚀</button>
         </div>
 
-        <!-- SATUNNAINEN GENERATOR PANEL -->
         <div class="panel">
-            <div class="panel-title">🎲 SATUNNAINEN GENERAATTORI</div>
-            <p style="color:#ffaa00; font-size:0.8rem; margin:0.8rem 0; line-height:1.3;">💡 Anna koneen tehdä päätöksiä! Löydä uusia yhdistelmiä.</p>
-            
+            <div class="panel-title">🎲 SATUNNAINEN</div>
             <label>RAJOITUKSET</label>
             <select id="randomConstraint">
                 <option value="none">TÄYSIN SATUNNAINEN</option>
@@ -427,12 +429,14 @@
                 <option value="beat-only">VAIN BEAT</option>
                 <option value="visual-only">VAIN VISUAALIT</option>
                 <option value="persona-only">VAIN PERSOONA</option>
+                <option value="countrytrap-only">VAIN COUNTRY-TRAP 🤠</option>
+                <option value="vainamonen-only">VAIN VÄINÄMÖINEN 🌙</option>
+                <option value="hardelo-only">VAIN HÄRDELÖT 🎻</option>
             </select>
             <button onclick="generateRandom()">🎲 SATUNNAINEN 🎲</button>
         </div>
     </div>
 
-    <!-- OUTPUT SECTION -->
     <div class="output-box">
         <div class="tab-buttons">
             <button class="tab-btn active" onclick="switchTab('lyrics')">LYRIIKKA</button>
@@ -440,25 +444,21 @@
             <button class="tab-btn" onclick="switchTab('beat')">BEAT</button>
             <button class="tab-btn" onclick="switchTab('visuals')">VISUAALIT</button>
         </div>
-
         <div id="lyricsOutput" style="display:block;">
             <div class="output-label">📝 GENEROITU LYRIIKKA</div>
-            <div class="output-content" id="lyricsContent">[Klikkaa GENEROI LYRIIKKA painiketta]</div>
+            <div class="output-content" id="lyricsContent">[Klikkaa GENEROI LYRIIKKA]</div>
         </div>
-
         <div id="personaOutput" style="display:none;">
             <div class="output-label">👤 GENEROITU PERSOONA</div>
-            <div class="output-content" id="personaContent">[Klikkaa GENEROI PERSOONA painiketta]</div>
+            <div class="output-content" id="personaContent">[Klikkaa GENEROI PERSOONA]</div>
         </div>
-
         <div id="beatOutput" style="display:none;">
             <div class="output-label">🥁 BEAT SPESIFIKAATIOT</div>
-            <div class="output-content" id="beatContent">[Klikkaa GENEROI BEAT painiketta]</div>
+            <div class="output-content" id="beatContent">[Klikkaa GENEROI BEAT]</div>
         </div>
-
         <div id="visualsOutput" style="display:none;">
             <div class="output-label">🎨 VISUAALI KUVAUS</div>
-            <div class="output-content" id="visualsContent">[Klikkaa RENDEROI VISUAALIT painiketta]</div>
+            <div class="output-content" id="visualsContent">[Klikkaa RENDEROI VISUAALIT]</div>
         </div>
         <div class="action-buttons">
             <button class="copy-btn" onclick="copyOutput()">📋 KOPIOI</button>
@@ -468,7 +468,6 @@
     </div>
 
     <script>
-        // Slider updates
         document.getElementById('rhymeIntensity').addEventListener('input', (e) => {
             document.getElementById('rhymeValue').textContent = e.target.value;
         });
@@ -490,36 +489,50 @@
         function generateLyrics() {
             const theme = document.getElementById('lyricsTheme').value || 'elämä';
             const style = document.getElementById('lyricsStyle').value;
-            const emotio = document.getElementById('lyricsEmotio').value;
-            let output = `[INTRO]\n${theme.toUpperCase()}\n\n[VERSE 1]\nKatujen pulssi sydämessä palaa\nHunajissa sokeria, haaveet ei valeita\nRitmi on elämää, flow on kuolematonta\nMinä kirjoitan historiaa joka beatissa\n\n[VERSE 2]\nNikotiini huumaa, korva kuuntelee\nKuolleen kaduilla, silmät avoimet\nMuista menneisyys, vaan elä nyt\n\n[OUTRO]\nBeat fades out...`;
+            let output = `[INTRO]\n${theme.toUpperCase()}\n\n`;
+            if (style === 'countrytrap') {
+                output += `[VERSE 1]\nPickup-autossa viina, hattu päässä\nCountry-soul sydämessä, trap-beat korvissa\nMaalaismies kaupungilla, sekoitus loistaa\n\n[VERSE 2]\nGitaara soittelee, trap-drumsit paukkuvat\nLänsi ja itä nyt yhdessä ottaa\n\n[OUTRO]\nCountry-trap eternityyn...`;
+            } else if (style === 'vainamonen') {
+                output += `[VERSE 1]\nKalevalan sanoja, runojen virtaa\nMystisen noitien tie, haltojen maita\nVäki-isä laulaa, salaisia saloja\nPohjan perää kutsuu\n\n[VERSE 2]\nVesi kantaa runoja, metsä siivin laulaa\nPohjolan kaukainen koti kutsuu mieltä\n\n[OUTRO]\nRunot lepäävät...`;
+            } else if (style === 'hardelo') {
+                output += `[VERSE 1]\nViulu soivaa, kihlojen kiiluu\nVanhan kansan tanssia, illan iloissa\nHärdelöt paukkuvat, sydän sykkii\nPellava ja perinne, polkaissa pyörii\n\n[VERSE 2]\nJouhikko johtaa, rummut raikaa\nMusiikan magia, sukujen muistissa\n\n[OUTRO]\nTanssi, kunnes aamu koittaa...`;
+            } else {
+                output += `[VERSE 1]\nKatujen pulssi sydämessä palaa\nRitmi on elämää, flow on kuolematonta\n\n[VERSE 2]\nMinä kirjoitan historiaa joka beatissa\nMuista menneisyys, vaan elä nyt\n\n[OUTRO]\nBeat fades out...`;
+            }
             document.getElementById('lyricsContent').textContent = output;
         }
 
         function generatePersona() {
             const personaType = document.getElementById('personaType').value;
             const voiceType = document.getElementById('voiceType').value;
-            const personas = {
-                street: `NIMI: STREET KING\nALKUPERÄ: Kaupungin sydän\n\nPERSOONALLISUUS:\n- Jäyhä, luotettava, todellinen\n- Ei pelkää sanoa mitä ajattelee\n- Katujen viisaus puhtaasta lähteestä`,
-                introspective: `NIMI: SHADOW THINKER\nALKUPERÄ: Mielen maailmoista\n\nPERSOONALLISUUS:\n- Filosofi räppäreissä\n- Näkee syvemmin kuin muut\n- Kysymykset ovat vastauksia`,
-                storyteller: `NIMI: CHRONICLES\nALKUPERÄ: Kaikkien aikojen historiasta\n\nPERSOONALLISUUS:\n- Jokainen laulu on elokuva\n- Tarina puhuu enemmän kuin sanat`,
+            let personas = {
+                vainamoinenbard: `NIMI: VÄINÄMÖINEN\nPERSOONA: Mystinen runolaulaja 🌙`,
+                hardelosoitaja: `NIMI: HÄRDELÖT JOUNI\nPERSOONA: Karjalainen viulistikko 🎻`,
+                countryballer: `NIMI: DUSTY ROADS\nPERSOONA: Lännen trap-artisti 🤠`,
             };
-            let output = personas[personaType] || personas.street;
-            output += `\n\nÄÄNI: ${voiceType.toUpperCase()}\n🎤 Valmis tuottamaan soundeja!`;
+            let output = personas[personaType] || `NIMI: STREET KING\nPERSOONA: Kaupungin sydän`;
+            output += `\n\nÄÄNI: ${voiceType.toUpperCase()}\n🎤 Valmis!`;
             document.getElementById('personaContent').textContent = output;
         }
 
         function generateBeat() {
             const tempo = document.getElementById('beatTempo').value;
             const drumPattern = document.getElementById('drumPattern').value;
-            let output = `BEAT SPESIFIKAATIOT:\n\n🎵 TEMPO: ${tempo} BPM\n🥁 DRUM PATTERN: ${drumPattern.toUpperCase()}\n\nRAKENNE:\n- Intro (4 baaria)\n- Verse (16 baaria)\n- Chorus (8 baaria)\n- Outro (4 baaria)\n\n✨ VIBE: HYPNOTTINEN & ADDIKTIIVINEN`;
+            let vibe = '✨ HYPNOTTINEN';
+            if (drumPattern === 'country') vibe = '🤠 COUNTRY-TRAP FUSION';
+            if (drumPattern === 'vainamonen') vibe = '🌙 VÄINÄMÖINEN FOLK-FUSION';
+            if (drumPattern === 'hardelo') vibe = '🎻 HÄRDELÖT VIULUFOLK';
+            const output = `BEAT SPESIFIKAATIOT:\n\n🎵 TEMPO: ${tempo} BPM\n🥁 PATTERN: ${drumPattern.toUpperCase()}\n\nRAKENNE:\n- Intro (4 baaria)\n- Verse (16 baaria)\n- Chorus (8 baaria)\n- Outro (4 baaria)\n\n${vibe}`;
             document.getElementById('beatContent').textContent = output;
         }
 
         function generateVisuals() {
             const style = document.getElementById('visualStyle').value;
-            const palette = document.getElementById('colorPalette').value;
-            const element = document.getElementById('visualElement').value;
-            let output = `🎨 VISUAALI DESIGN:\n\nTYYLI: ${style.toUpperCase()}\nVÄRI: ${palette.toUpperCase()}\nELEMENTTI: ${element.toUpperCase()}\n\nDETAILIT:\n- Neon-viivat\n- Syvä kontrasti\n- Glitch-efektit\n- 4K resoluutio\n- 60fps animaatio`;
+            let details = '- Neon-viivat\n- Syvä kontrasti\n- Glitch-efektit';
+            if (style === 'vainamonen') details = '- Kalevala-runous\n- Mystinen valo\n- Pohjan taika-merkinnät';
+            if (style === 'hardelo') details = '- Perinteinen folk-taide\n- Karjalainen sommittelu\n- Tanssivat hahmot';
+            if (style === 'countrywood') details = '- Lännen tunnelma\n- Pölypeikko ja aurinkosäteily\n- Maalaismaisema & neonit';
+            const output = `🎨 VISUAALI DESIGN:\n\nTYYLI: ${style.toUpperCase()}\n\nDETAILIT:\n${details}\n- 4K resoluutio\n- 60fps animaatio`;
             document.getElementById('visualsContent').textContent = output;
         }
 
@@ -532,14 +545,13 @@
         }
 
         function generateRandom() {
-            document.getElementById('lyricsStyle').value = ['trap', 'boombap', 'drill', 'gospel', 'oldschool'][Math.floor(Math.random() * 5)];
-            document.getElementById('lyricsEmotio').value = ['aggressive', 'smooth', 'introspective', 'party', 'dark'][Math.floor(Math.random() * 5)];
-            document.getElementById('beatTempo').value = ['90', '110', '140', '170', '200'][Math.floor(Math.random() * 5)];
-            document.getElementById('personaType').value = ['street', 'introspective', 'storyteller', 'producer', 'spiritual', 'rebel'][Math.floor(Math.random() * 6)];
+            const styles = ['trap', 'countrytrap', 'vainamonen', 'hardelo'];
+            const personas = ['street', 'countryballer', 'vainamoinenbard', 'hardelosoitaja'];
+            document.getElementById('lyricsStyle').value = styles[Math.floor(Math.random() * styles.length)];
+            document.getElementById('personaType').value = personas[Math.floor(Math.random() * personas.length)];
             generateFull();
         }
 
-        // THEME TOGGLE
         function toggleTheme() {
             document.body.classList.toggle('light-mode');
             const isDark = !document.body.classList.contains('light-mode');
@@ -547,19 +559,15 @@
             document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
         }
 
-        // COPY TO CLIPBOARD
         function copyOutput() {
             const tabs = ['lyricsOutput', 'personaOutput', 'beatOutput', 'visualsOutput'];
             let activeTab = tabs.find(tab => document.getElementById(tab).style.display === 'block');
             const content = document.querySelector(`#${activeTab} .output-content`).textContent;
             navigator.clipboard.writeText(content).then(() => {
-                alert('✅ Kopioitu leikepöydälle!');
-            }).catch(() => {
-                alert('❌ Kopiointi epäonnistui');
+                alert('✅ Kopioitu!');
             });
         }
 
-        // SAVE OUTPUT
         function saveOutput() {
             const data = {
                 lyrics: document.getElementById('lyricsContent').textContent,
@@ -569,26 +577,23 @@
                 timestamp: new Date().toLocaleString('fi-FI')
             };
             localStorage.setItem('hiphopData_' + Date.now(), JSON.stringify(data));
-            alert('✅ Tallennettu onnistuneesti!');
+            alert('✅ Tallennettu!');
         }
 
-        // LOAD OUTPUT
         function loadOutput() {
             const keys = Object.keys(localStorage).filter(k => k.startsWith('hiphopData_'));
             if (keys.length === 0) {
-                alert('❌ Ei tallennettuja tietoja');
+                alert('❌ Ei tietoja');
                 return;
             }
-            const lastKey = keys[keys.length - 1];
-            const data = JSON.parse(localStorage.getItem(lastKey));
+            const data = JSON.parse(localStorage.getItem(keys[keys.length - 1]));
             document.getElementById('lyricsContent').textContent = data.lyrics;
             document.getElementById('personaContent').textContent = data.persona;
             document.getElementById('beatContent').textContent = data.beat;
             document.getElementById('visualsContent').textContent = data.visuals;
-            alert(`✅ Ladattu (${data.timestamp})`);
+            alert('✅ Ladattu!');
         }
 
-        // LOAD THEME ON START
         window.addEventListener('DOMContentLoaded', () => {
             const theme = localStorage.getItem('theme') || 'dark';
             if (theme === 'light') {
